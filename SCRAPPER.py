@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 url = 'https://www.amazon.in/Mivi-Saxo-Wireless-Bluetooth-Earphones/dp/B075XLGW8J/ref=sr_1_2?keywords=mivi+saxo&qid=1572534819&sr=8-2'
 
-headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0"}
+
 
 def send_mail():
      server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -12,7 +12,7 @@ def send_mail():
      server.starttls()
      server.ehlo()
 
-     server.login('mailstochiragsapra@gmail.com', 'jxotmeznuejmtahf')
+   
 
      subject = 'PRICE FELL DOWN'
      body = 'Check this Link   https://www.amazon.in/Mivi-Saxo-Wireless-Bluetooth-Earphones/dp/B075XLGW8J/ref=sr_1_2?keywords=mivi+saxo&qid=1572534819&sr=8-2'
@@ -20,8 +20,8 @@ def send_mail():
      msg = f"Subject: {subject}\n\n{body}"
 
      server.sendmail(
-         'mailstochirag@gmail.com',
-         'csapra121@gmail.com',
+         '',
+         '',
          msg
      )
      print("HEY EMAIL HAS BEEN SENT")
